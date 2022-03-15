@@ -1,0 +1,28 @@
+.list-element-container {
+    background-color: #fcf1d5;
+    margin-top: 10px;
+    padding: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.list-element-container a {
+    text-decoration: none;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.list-element-song {
+    font-size: 18px;
+    margin: 0;
+}
+
+.list-element-band {
+    font-size: 14px;
+    margin: 0;
+}
+
+.list-element-icon {
+    display: flex;
+    justify-content: end;
+}
