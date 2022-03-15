@@ -1,4 +1,6 @@
 import './card.css';
+import React from 'react';
+
 
 export default function Card({onClick, DATA}){
     return(

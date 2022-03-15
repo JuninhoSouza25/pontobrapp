@@ -1,5 +1,7 @@
 import './list.css';
 import { BiChevronsRight } from "react-icons/bi";
+import React from 'react';
+
 
 export default function List({onClick, DATA, value}){
     return(
