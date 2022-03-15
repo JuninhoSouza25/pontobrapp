@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import Card from "./components/card";
-import List from './components/list'
-import DATA from './data'
+import List from './components/list';
+import Logo from "./components/logo";
+import DATA from './data';
 
 function App() {
   const [list, setList] = useState(true);
@@ -23,6 +24,7 @@ function App() {
   return (
     <div className="App">
       <>
+        <Logo />
         {list && (<List onClick={handleList} DATA={DATA}/>)}
 
         {card && (<Card onClick={handleBack} DATA={song}/>)}

@@ -1,14 +1,13 @@
 import './card.css';
 import React from 'react';
 
-
 export default function Card({onClick, DATA}){
     return(
         <div className='card-container'>
             <h1>{DATA.song}</h1>
             <h2>{DATA.band}</h2>
             <p>{`Tom: ${DATA.tune}`}</p>
-            <div>
+            <div className='card-video-container'>
                 <video 
                     width="100%"
                     heigth="auto"
