@@ -1,21 +1,20 @@
 .list-element-container {
     background-color: #fcf1d5;
     margin-top: 10px;
-    padding: 5px;
+    padding-left: 5px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     list-style: none;
     width: 400px;
+    transition: ease all 1s;
+}
+
+.list-element-container:hover {
+    background-color: #bdb5a0;
+    cursor: pointer;
 }
 
 .list-element-container:last-child {
     margin-bottom: 25px;
-}
-
-.list-element-container a {
-    text-decoration: none;
-    color: black;
-    display: flex;
-    flex-direction: column;
 }
 
 .list-element-song {
@@ -34,8 +33,7 @@
 }
 
 @media screen and (max-width: 420px){
-    .list-element-container{
-        width: 100%;
-        padding-left: 15px;
+    .list-element-container {
+        width: 99%;
     }
 }

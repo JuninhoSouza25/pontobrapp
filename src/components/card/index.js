@@ -8,8 +8,8 @@ export default function Card({onClick, DATA}){
             <p className='card-band'>{DATA.band}</p>
             <div className='card-video-container'>
                 <iframe 
-                width="360" 
-                height="280" 
+                width="100%" 
+                height="500" 
                 src={`https://youtube.com/embed/${DATA.video}`}
                 title="YouTube video player" 
                 frameBorder="0" 
