@@ -51,7 +51,7 @@
 
 @media screen and (max-width: 420px){
     .card-video-container {
-        width: 100%;
+        width: 98%;
     }
 
     iframe {
