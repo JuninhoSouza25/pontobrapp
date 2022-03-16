@@ -1,11 +1,15 @@
 import './card.css';
 import React from 'react';
+import Lyrics from '../lyrics';
 
 export default function Card({onClick, DATA}){
+
+
     return(
         <div className='card-container'>
             <h1 className='card-song'>{DATA.song}</h1>
             <p className='card-band'>{DATA.band}</p>
+            <div className='card-text'><Lyrics props={DATA.apisong} /></div>
             <div className='card-video-container'>
                 <iframe 
                 width="100%" 

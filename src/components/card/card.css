@@ -38,6 +38,11 @@
     transition: ease all 1s;
 }
 
+.card-text {
+    width: 300px;
+    padding-bottom: 15px;
+}
+
 .card-video-container {
     display: flex;
     justify-content: center;
@@ -51,10 +56,15 @@
 
 @media screen and (max-width: 420px){
     .card-video-container {
-        width: 98%;
+
+        width: 95%;
     }
 
     iframe {
         height: 300px;
+    }
+
+    .button {
+        width: 95%;
     }
 }
