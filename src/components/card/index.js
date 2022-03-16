@@ -4,19 +4,20 @@ import React from 'react';
 export default function Card({onClick, DATA}){
     return(
         <div className='card-container'>
-            <h1>{DATA.song}</h1>
-            <h2>{DATA.band}</h2>
-            <p>{`Tom: ${DATA.tune}`}</p>
+            <h1 className='card-song'>{DATA.song}</h1>
+            <p className='card-band'>{DATA.band}</p>
             <div className='card-video-container'>
-                <video 
-                    width="100%"
-                    heigth="auto"
-                    controls 
-                    poster={DATA.poster}
-                    src={DATA.video}>
-                </video>
+                <iframe 
+                width="360" 
+                height="280" 
+                src={`https://youtube.com/embed/${DATA.video}`}
+                title="YouTube video player" 
+                frameBorder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowFullScreen>
+                </iframe>
             </div>
-            <button onClick={onClick}>Voltar</button>
+            <button className='button' onClick={onClick}>Voltar</button>
             
         </div>
     )
