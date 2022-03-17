@@ -9,7 +9,7 @@ export default function Lyrics(props){
         .then((response) => {
             setMusic(response.data.mus[0].text)
         });
-    }, []);
+    },);
 
     return(
         <div style={{color:"#fcf1d5", textAlign:"center"}}>
