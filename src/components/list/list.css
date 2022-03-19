@@ -1,39 +1,57 @@
 .list-element-container {
-    background-color: #fcf1d5;
+    border: 3px solid #fcf1d5;
+    border-radius: 14px;
     margin-top: 10px;
-    padding-left: 5px;
+    padding-left: 7px;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     list-style: none;
-    width: 400px;
+    width: 30vw;
+    height: 75px;
     transition: ease all 1s;
+    color: #fcf1d5;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    transform: scale(.95);
 }
 
 .list-element-container:hover {
-    background-color: #bdb5a0;
+    background-color: #fcf1d5;
+    color: black;
     cursor: pointer;
+    transform: scale(1);
 }
 
 .list-element-container:last-child {
     margin-bottom: 25px;
 }
 
+.list-element-description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
 .list-element-song {
+    color: inherit;
     font-size: 18px;
     margin: 0;
 }
 
 .list-element-band {
+    color: inherit;
     font-size: 14px;
     margin: 0;
 }
 
 .list-element-icon {
     display: flex;
+    align-items: center;
     justify-content: flex-end;
 }
 
 @media screen and (max-width: 420px){
     .list-element-container {
-        width: 98%;
+        width: 100vw;
     }
 }

@@ -65,7 +65,7 @@ const DATA = [
     },
     {
         id: 9,
-        song: "Ilê Ayê (Mundo Negro)",
+        song: "Ilê Ayê",
         band: "O Rappa",
         video: "E_DjChWgnJo",
         apisong: "art=o%20rappa&mus=ile%20aye",

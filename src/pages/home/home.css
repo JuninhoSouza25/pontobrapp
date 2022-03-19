@@ -1,0 +1,40 @@
+.home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.home h1 {
+    color: #fcf1d5;
+}
+
+.home-link {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fcf1d5;
+    font-size: 18px;
+    font-weight: 700;
+    border: 2px solid #fcf1d5;
+    border-radius: 14px;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    width: 400px;
+    height: 120px;
+    transition: ease all 1s;
+    transform: scale(.95);
+}
+
+.home-link:hover {
+    background-color: #fcf1d5;
+    color: black;
+    transform: scale(1);
+}
+
+@media screen and (max-width: 420px){
+    .home-link {
+        width: 45vw;
+    }
+}
