@@ -11,8 +11,8 @@ export function Home() {
     <>
       <Logo />
       <div className="home">
-          <Link className="home-link" to='/repertorio'><AiOutlineOrderedList color="#fcf1d5" size={40} />Repertório</Link>
-          <Link className="home-link" to='/repertorio'><AiOutlineRead color="#fcf1d5" size={40} />Agenda</Link>
+          <Link className="home-link" to='/repertorio'><AiOutlineOrderedList color="inherit" size={40} />Repertório</Link>
+          <Link className="home-link" to='/agenda'><AiOutlineRead color="inherit" size={40} />Agenda</Link>
       </div>
     </>
   );
