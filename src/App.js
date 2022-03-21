@@ -4,6 +4,8 @@ import React from "react";
 import Repertoire from "./pages/setlist";
 import { Music } from "./pages/music";
 import Schedule from "./pages/schedule";
+import Playlist from "./pages/playlist";
+import Gallery from "./pages/gallery";
 
 export default function App(){
   return(
@@ -12,6 +14,8 @@ export default function App(){
       <Route path="/repertorio" element={<Repertoire />} />
       <Route path="/musica" element={<Music />} />
       <Route path="/agenda" element={<Schedule />} />
+      <Route path="/playlist" element={<Playlist />} />
+      <Route path="/galeria" element={<Gallery />} />
     </Routes>
   )
 }
