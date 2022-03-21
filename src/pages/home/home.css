@@ -25,8 +25,16 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     width: 400px;
     height: 120px;
-    transition: ease all 1s;
     transform: scale(.95);
+    animation: slideX 1.5s;
+}
+
+@keyframes slideX{
+    from{
+        transform: translateX(-200px);
+    }to{
+        transform: translateX(0);
+    }
 }
 
 .home-link:hover {
@@ -41,6 +49,8 @@
 
 @media screen and (max-width: 420px){
     .home-link {
+        transform: scale(1);
         width: 45vw;
+        margin: 5px;
     }
 }

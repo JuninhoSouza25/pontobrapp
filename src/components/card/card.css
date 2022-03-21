@@ -24,6 +24,15 @@
     text-align: center;
 }
 
+.card-music-container {
+    width: 60vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    flex-wrap: wrap;
+    margin-bottom: 25px;
+}
+
 .button {
     background-color: #7f0000;
     border-radius: 10px;
@@ -37,7 +46,7 @@
     border: 2px solid #fcf1d5;
     color: #fcf1d5;
     font-weight: 700;
-    transition: ease all 1s;
+    transition: all ease 1s;
     transform: scale(.95);
 }
 
@@ -60,16 +69,12 @@
 }
 
 @media screen and (max-width: 420px){
-    .card-video-container {
-
+    .card-video-container, .card-music-container, .card-text, .button {
+        justify-content: center;
         width: 95%;
     }
 
     iframe {
         height: 300px;
-    }
-
-    .button {
-        width: 95%;
     }
 }

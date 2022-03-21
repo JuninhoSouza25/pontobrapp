@@ -23,19 +23,21 @@ export default function Card({onClick, DATA}){
         <div className='card-container'>
             <h1 className='card-song'>{DATA.song}</h1>
             <p className='card-band'>{DATA.band}</p>
-            <div className='card-text'>
-                <Lyrics art={`${art}&${mus}`} />
-            </div>
-            <div className='card-video-container'>
-                <iframe 
-                width="100%" 
-                height="500" 
-                src={`https://youtube.com/embed/${DATA.video}`}
-                title="YouTube video player" 
-                frameBorder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowFullScreen>
-                </iframe>
+            <div className='card-music-container'>
+                <div className='card-text'>
+                    <Lyrics art={`${art}&${mus}`} />
+                </div>
+                <div className='card-video-container'>
+                    <iframe 
+                    width="100%" 
+                    height="500" 
+                    src={`https://youtube.com/embed/${DATA.video}`}
+                    title="YouTube video player" 
+                    frameBorder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowFullScreen>
+                    </iframe>
+                </div>
             </div>
             <button className='button' onClick={onClick}>Voltar</button>
             
