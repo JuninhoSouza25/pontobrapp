@@ -6,7 +6,15 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    transition: ease all 1s;
+    animation: opacity 1.5s;
+}
+
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
 }
 
 .card-song {

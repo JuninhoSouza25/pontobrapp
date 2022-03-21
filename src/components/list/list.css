@@ -12,7 +12,7 @@
     flex-direction: row;
     justify-content: space-between;
     transform: scale(.95);
-    animation: slideX 1.5s;
+    animation: slideX 1.5s, opacity 1.5s;
 }
 
 @keyframes slideX{
@@ -20,6 +20,14 @@
         transform: translateX(-200px);
     }to{
         transform: translateX(0);
+    }
+}
+
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
     }
 }
 

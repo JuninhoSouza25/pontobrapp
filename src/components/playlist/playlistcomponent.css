@@ -20,7 +20,15 @@
     color: #fcf1d5;
     font-weight: 700;
     transform: scale(.95);
-    animation: slideX 1.5s;
+    animation: slideX 1.5s, opacity 1.5s;
+}
+
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
+    }
 }
 
 @keyframes slideX{
