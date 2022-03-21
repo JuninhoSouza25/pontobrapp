@@ -1,6 +1,8 @@
 import React from "react";
 import Logo from "../../components/logo";
 import './gallery.css'
+import Menu from '../../components/menu';
+
 
 export default function Gallery(){
     return(
@@ -10,6 +12,7 @@ export default function Gallery(){
                 <h1>Galeria</h1>
 
             </div>
+            <Menu />
         </>
     )
 }

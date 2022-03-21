@@ -4,6 +4,7 @@ import Logo from "../../components/logo";
 import DATA from "../../data";
 import Card from "../../components/card";
 import './setlist.css';
+import Menu from "../../components/menu";
 
 export default function Repertoire(){
     const [list, setList] = useState(true);
@@ -27,6 +28,7 @@ export default function Repertoire(){
             <Logo />
             {list && (<List onClick={handleList} DATA={DATA}/>)}
             {card && (<Card onClick={handleBack} DATA={song}/>)}
+            <Menu />
         </div>
         
     )

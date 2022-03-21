@@ -1,0 +1,30 @@
+.gallery-component--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.gallery-component--link {
+    background-color: #7f0000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 14px;
+    text-decoration: none;
+    margin-top: 10px;
+    height: 120px;
+    width: 360px;
+    border: 2px solid #fcf1d5;
+    color: #fcf1d5;
+    font-weight: 700;
+    transition: ease all 1s;
+    transform: scale(.95);
+}
+
+.gallery-component--link:hover {
+    background-color: #fcf1d5;
+    color: black;
+    transform: scale(1);
+}

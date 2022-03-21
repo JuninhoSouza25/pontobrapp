@@ -22,8 +22,8 @@
     transform: scale(1);
 }
 
-.list-element-container:last-child {
-    margin-bottom: 25px;
+.setlist {
+    margin-bottom: 75px;
 }
 
 .list-element-description-container {
