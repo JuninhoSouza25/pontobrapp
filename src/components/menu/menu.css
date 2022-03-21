@@ -8,6 +8,15 @@
     width: 100%;
     bottom: 0;
     transition: all ease 1s;
+    animation: slideY 1s;
+}
+
+@keyframes slideY{
+    from{
+        transform: translateY(90px);
+    }to{
+        transform: translateY(0);
+    }
 }
 
 .menu-link {
