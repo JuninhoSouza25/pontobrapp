@@ -1,6 +1,6 @@
 {
-  "short_name": "Ponto BR App",
-  "name": "Aplicativo da banda Ponto BR",
+  "short_name": "Ponto BR",
+  "name": "Loading... ",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,6 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#fcf1d5",
-  "background_color": "#7f0000"
+  "theme_color": "#7f0000",
+  "background_color": "#fcf1d5"
 }
