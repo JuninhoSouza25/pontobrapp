@@ -25,8 +25,9 @@
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
     width: 400px;
     height: 120px;
+    transition: all ease 1.5s;
     transform: scale(.95);
-    animation: slideX 1.5s;
+    animation: slideX 1.5s, opacity 1.5s;
 }
 
 @keyframes slideX{
@@ -34,6 +35,14 @@
         transform: translateX(-200px);
     }to{
         transform: translateX(0);
+    }
+}
+
+@keyframes opacity{
+    from{
+        opacity: 0;
+    }to{
+        opacity: 1;
     }
 }
 

@@ -11,8 +11,9 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    transition: all ease 1.5s;
     transform: scale(.95);
-    animation: slideX 1.5s, opacity 1.5s;
+    animation: slideX 1.5s, opacity 2s;
 }
 
 @keyframes slideX{
